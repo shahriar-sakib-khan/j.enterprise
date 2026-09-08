@@ -6,10 +6,8 @@
 
 @layer base {
   :root {
-    /* blue-50 — crisp ice-blue white */
-    --background: #eff6ff;
-    /* blue-950 — deep navy text */
-    --foreground: #172554;
+    --background: #EFF6FF;
+    --foreground: #ffffff;
   }
 
   body {

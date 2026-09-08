@@ -34,7 +34,7 @@ export default function TrustIntro() {
               Marine equipment support for vessel operations
             </h2>
             
-            <div className="space-y-6 text-blue-700 text-lg mb-10 leading-relaxed">
+            <div className="space-y-6 text-slate-200 text-lg mb-10 leading-relaxed">
               <p>
                 Based in Chattogram, <strong className="text-[#0A192F] font-semibold">{siteConfig.businessName}</strong> provides vital vessel accessories and equipment to support marine operations.
               </p>

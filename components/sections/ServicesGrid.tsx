@@ -51,7 +51,7 @@ export default function ServicesGrid() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-blue-700 text-sm mb-6 flex-grow leading-relaxed">
+                  <p className="text-slate-200 text-sm mb-6 flex-grow leading-relaxed">
                     {service.shortDescription}
                   </p>
                   

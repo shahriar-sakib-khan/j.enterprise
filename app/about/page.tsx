@@ -56,7 +56,7 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className="lg:col-span-8 prose prose-lg max-w-none text-blue-700">
+            <div className="lg:col-span-8 prose prose-lg max-w-none text-[#0A192F]">
               <p className="text-xl text-[#0A192F] font-medium leading-relaxed mb-8">
                 {siteConfig.businessName} ({siteConfig.shortName}) focuses on the supply and sourcing of essential marine equipment for commercial vessels, maritime operations, and industrial applications.
               </p>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 {siteConfig.proprietor}
               </h3>
               <p className="text-xl text-[#0A192F] font-medium mb-4">Proprietor, {siteConfig.businessName}</p>
-              <p className="text-blue-700 leading-relaxed max-w-2xl">
+              <p className="text-slate-200 leading-relaxed max-w-2xl">
                 With a deep commitment to the maritime industry, MD. Jana Alam leads {siteConfig.shortName} with a focus on operational excellence, reliable sourcing, and establishing enduring partnerships with vessel operators internationally.
               </p>
             </div>

@@ -47,7 +47,7 @@ export default function WhyWorkWithUs() {
                 <h3 className="text-xl font-bold text-[#0A192F] mb-4">
                   {principle.title}
                 </h3>
-                <p className="text-blue-700 leading-relaxed">
+                <p className="text-slate-200 leading-relaxed">
                   {principle.description}
                 </p>
               </div>

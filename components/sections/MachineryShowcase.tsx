@@ -25,21 +25,21 @@ export default function MachineryShowcase() {
             <p className="text-blue-300 text-lg leading-relaxed mb-10">
               Whether you require a complete engine for refit or major components for overhaul, our team can assess availability and coordinate shipment to your vessel's port of call.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center bg-[#00B4D8] text-white px-8 py-4 font-semibold hover:bg-white hover:text-[#0A192F] transition-colors group"
-              >
-                Enquire About This Equipment
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center border border-blue-500 text-blue-200 px-8 py-4 font-medium hover:bg-blue-900 transition-colors"
-              >
-                View All Services
-              </Link>
-            </div>
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Link 
+              href="/stock"
+              className="inline-flex justify-center items-center gap-2 bg-[#00B4D8] text-white px-8 py-4 rounded-md font-semibold hover:bg-white hover:text-[#0A192F] transition-colors"
+            >
+              View Full Stock Inventory
+              <ArrowRight size={20} />
+            </Link>
+            <Link 
+              href="/contact"
+              className="inline-flex justify-center items-center gap-2 border border-blue-200 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-800 transition-colors"
+            >
+              Enquire Availability
+            </Link>
+          </div>
           </div>
 
           {/* Image Side */}

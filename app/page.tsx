@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <MachineryShowcase />
       <TrustIntro />
       <ServicesGrid />
-      <MachineryShowcase />
       <Brands />
       <MarineVisual />
       <WhyWorkWithUs />
