@@ -5,16 +5,16 @@ import { services } from "@/lib/services";
 
 export default function ServicesGrid() {
   return (
-    <section className="py-20 md:py-32 bg-[#F8F9FA]">
+    <section className="py-20 md:py-32 bg-[#0A192F]">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="mb-16 md:mb-24 max-w-2xl text-center md:text-left mx-auto md:mx-0">
           <p className="text-[#00B4D8] font-bold tracking-widest uppercase mb-4 text-sm">
             Product Categories
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A192F] leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
             Vessel Accessories & Equipment
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-blue-300 text-lg">
             We supply a focused range of marine equipment necessary for day-to-day vessel operations and maintenance.
           </p>
         </div>
@@ -27,10 +27,10 @@ export default function ServicesGrid() {
               <Link 
                 key={service.id} 
                 href={`/services/${service.id}`}
-                className="group flex flex-col h-full bg-white border border-gray-100 hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="group flex flex-col h-full bg-white border-2 border-blue-200 hover:border-[#00B4D8] border-blue-100 hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 {/* Image Section */}
-                <div className="relative h-48 w-full bg-gray-100 overflow-hidden">
+                <div className="relative h-48 w-full bg-blue-50 overflow-hidden">
                   <Image 
                     src={service.image} 
                     alt={service.title}
@@ -51,7 +51,7 @@ export default function ServicesGrid() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">
+                  <p className="text-blue-700 text-sm mb-6 flex-grow leading-relaxed">
                     {service.shortDescription}
                   </p>
                   

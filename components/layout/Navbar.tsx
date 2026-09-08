@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
             <div className="font-bold text-xl md:text-2xl text-white tracking-tight flex flex-col drop-shadow-md">
               <span>{siteConfig.businessName}</span>
-              <span className="text-xs text-gray-300 uppercase tracking-widest">{siteConfig.shortName}</span>
+              <span className="text-xs text-blue-200 uppercase tracking-widest">{siteConfig.shortName}</span>
             </div>
           </Link>
 
@@ -84,12 +84,12 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#0A192F] shadow-lg border-t border-gray-700 py-4 px-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#0A192F] shadow-lg border-t border-blue-800 py-4 px-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-base font-medium text-white py-2 border-b border-gray-700"
+              className="text-base font-medium text-white py-2 border-b border-blue-800"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}

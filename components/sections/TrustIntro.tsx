@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 
 export default function TrustIntro() {
   return (
-    <section className="py-20 md:py-32 bg-[#F8F9FA]">
+    <section className="py-20 md:py-32 bg-blue-50">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
@@ -34,7 +34,7 @@ export default function TrustIntro() {
               Marine equipment support for vessel operations
             </h2>
             
-            <div className="space-y-6 text-gray-600 text-lg mb-10 leading-relaxed">
+            <div className="space-y-6 text-blue-700 text-lg mb-10 leading-relaxed">
               <p>
                 Based in Chattogram, <strong className="text-[#0A192F] font-semibold">{siteConfig.businessName}</strong> provides vital vessel accessories and equipment to support marine operations.
               </p>

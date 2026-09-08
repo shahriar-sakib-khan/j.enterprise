@@ -18,7 +18,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Services & Products
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed mb-10">
+            <p className="text-xl text-blue-200 leading-relaxed mb-10">
               Technical equipment and vessel accessories for marine operations, maintenance, and industrial requirements.
             </p>
             <Link 

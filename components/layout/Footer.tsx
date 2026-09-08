@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0A192F] text-[#F8F9FA] pt-16 pb-8">
+    <footer className="bg-[#0A192F] text-slate-50 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Column 1 */}
@@ -23,10 +23,10 @@ export default function Footer() {
               </div>
               <div className="font-bold text-2xl tracking-tight flex flex-col text-white">
                 <span>{siteConfig.businessName}</span>
-                <span className="text-sm text-gray-300 uppercase tracking-widest">{siteConfig.shortName}</span>
+                <span className="text-sm text-blue-200 uppercase tracking-widest">{siteConfig.shortName}</span>
               </div>
             </div>
-            <p className="text-sm text-gray-300 leading-relaxed max-w-sm mt-4">
+            <p className="text-sm text-blue-200 leading-relaxed max-w-sm mt-4">
               {siteConfig.description}
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function Footer() {
           {/* Column 2 */}
           <div>
             <h3 className="font-bold text-lg mb-6">Company</h3>
-            <ul className="flex flex-col gap-3 text-sm text-gray-300">
+            <ul className="flex flex-col gap-3 text-sm text-blue-200">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
                   About
@@ -56,7 +56,7 @@ export default function Footer() {
           {/* Column 3 */}
           <div>
             <h3 className="font-bold text-lg mb-6">Services</h3>
-            <ul className="flex flex-col gap-3 text-sm text-gray-300">
+            <ul className="flex flex-col gap-3 text-sm text-blue-200">
               {services.map((service) => (
                 <li key={service.id}>
                   <Link href={`/services/${service.id}`} className="hover:text-white transition-colors">
@@ -70,7 +70,7 @@ export default function Footer() {
           {/* Column 4 */}
           <div>
             <h3 className="font-bold text-lg mb-6">Contact</h3>
-            <ul className="flex flex-col gap-4 text-sm text-gray-300">
+            <ul className="flex flex-col gap-4 text-sm text-blue-200">
               <li>
                 <span className="block font-semibold text-white mb-1">Head Office:</span>
                 {siteConfig.locations[0].address}, {siteConfig.locations[0].street}, {siteConfig.locations[0].city}
@@ -93,7 +93,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-700/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+        <div className="pt-8 border-t border-blue-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-300">
           <p>
             &copy; {currentYear} {siteConfig.businessName} / {siteConfig.shortName}. All rights reserved.
           </p>

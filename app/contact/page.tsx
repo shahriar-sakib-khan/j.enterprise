@@ -28,20 +28,20 @@ export default function ContactPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Contact Our Team
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-blue-200 leading-relaxed">
               Request an enquiry or discuss your vessel equipment requirements.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-20 md:py-32 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
             
             {/* Contact Information */}
             <div className="lg:col-span-4 order-2 lg:order-1">
-              <div className="bg-[#F8F9FA] p-8 border border-gray-100">
+              <div className="bg-blue-50 p-8 border border-blue-100">
                 <h2 className="text-2xl font-bold text-[#0A192F] mb-8">Direct Contact</h2>
                 
                 <div className="space-y-8">
@@ -50,7 +50,7 @@ export default function ContactPage() {
                       <Mail className="w-5 h-5 mr-3" />
                       Email
                     </div>
-                    <a href={`mailto:${siteConfig.email}`} className="text-gray-600 hover:text-[#0A192F] transition-colors text-lg">
+                    <a href={`mailto:${siteConfig.email}`} className="text-blue-700 hover:text-[#0A192F] transition-colors text-lg">
                       {siteConfig.email}
                     </a>
                   </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                     </div>
                     {siteConfig.phone.map((phone, i) => (
                       <div key={i} className="mb-2">
-                        <a href={`tel:${phone.replace(/[^0-9+]/g, '')}`} className="text-gray-600 hover:text-[#0A192F] transition-colors text-lg block">
+                        <a href={`tel:${phone.replace(/[^0-9+]/g, '')}`} className="text-blue-700 hover:text-[#0A192F] transition-colors text-lg block">
                           {phone}
                         </a>
                       </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                         <MapPin className="w-5 h-5 mr-3" />
                         {loc.type}
                       </div>
-                      <address className="not-italic text-gray-600 leading-relaxed">
+                      <address className="not-italic text-blue-700 leading-relaxed">
                         {loc.address}<br />
                         {loc.street}<br />
                         {loc.city}<br />
@@ -91,7 +91,7 @@ export default function ContactPage() {
             <div className="lg:col-span-8 order-1 lg:order-2">
               <div className="mb-10">
                 <h2 className="text-3xl font-bold text-[#0A192F] mb-4">Request an Enquiry</h2>
-                <p className="text-gray-600">Please provide details about your requirement and our team will respond promptly.</p>
+                <p className="text-blue-700">Please provide details about your requirement and our team will respond promptly.</p>
               </div>
 
               {formStatus === "success" && (
@@ -107,21 +107,21 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Name *</label>
+                    <label htmlFor="name" className="block text-sm font-semibold text-blue-950 mb-2">Name *</label>
                     <input 
                       type="text" 
                       id="name" 
                       required
-                      className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
                       placeholder="Full Name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="company" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Company</label>
+                    <label htmlFor="company" className="block text-sm font-semibold text-blue-950 mb-2">Company</label>
                     <input 
                       type="text" 
                       id="company" 
-                      className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
                       placeholder="Company Name"
                     />
                   </div>
@@ -129,22 +129,22 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Email *</label>
+                    <label htmlFor="email" className="block text-sm font-semibold text-blue-950 mb-2">Email *</label>
                     <input 
                       type="email" 
                       id="email" 
                       required
-                      className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
                       placeholder="Email Address"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Phone *</label>
+                    <label htmlFor="phone" className="block text-sm font-semibold text-blue-950 mb-2">Phone *</label>
                     <input 
                       type="tel" 
                       id="phone" 
                       required
-                      className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
                       placeholder="Phone Number"
                     />
                   </div>
@@ -152,20 +152,20 @@ export default function ContactPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="vesselName" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Vessel Name</label>
+                    <label htmlFor="vesselName" className="block text-sm font-semibold text-blue-950 mb-2">Vessel Name</label>
                     <input 
                       type="text" 
                       id="vesselName" 
-                      className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors"
                       placeholder="Vessel Name (if applicable)"
                     />
                   </div>
                   <div>
-                    <label htmlFor="service" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Service / Equipment Required *</label>
+                    <label htmlFor="service" className="block text-sm font-semibold text-blue-950 mb-2">Service / Equipment Required *</label>
                     <select 
                       id="service" 
                       required
-                      className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors appearance-none"
+                      className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors appearance-none"
                     >
                       <option value="">Select a category</option>
                       {services.map(s => (
@@ -177,12 +177,12 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-[#2A2A2A] mb-2">Message *</label>
+                  <label htmlFor="message" className="block text-sm font-semibold text-blue-950 mb-2">Message *</label>
                   <textarea 
                     id="message" 
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-[#F8F9FA] border border-gray-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors resize-y"
+                    className="w-full px-4 py-3 bg-blue-50 border border-blue-200 focus:border-[#00B4D8] focus:ring-1 focus:ring-accent-teal outline-none transition-colors resize-y"
                     placeholder="Provide details about your requirement..."
                   ></textarea>
                 </div>

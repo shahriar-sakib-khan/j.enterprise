@@ -7,9 +7,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:5005",
   email: "jenterprisectg@gmail.com",
   phone: [
-    "+880 1819-317205", // Placeholder phone, user said use exact from file, but I don't have the file visually, wait, I DO! "Use the exact phone numbers and other contact information from the supplied files." 
-    // Wait, the prompt says: "jenterprisectg@gmail.com" but didn't provide the exact phone numbers in the prompt. I will use a generic placeholder and note it.
-    // "jenterprisectg@gmail.com" is provided.
+    "+880 1748-828251",
   ],
   locations: [
     {
@@ -29,7 +27,7 @@ export const siteConfig = {
   ],
   brands: [
     "YANMAR",
-    "LAPA",
+    "HATLAPA",
     "Staffa",
     "IHI",
     "Rexroth",

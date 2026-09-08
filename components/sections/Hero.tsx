@@ -23,7 +23,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Marine Equipment & Vessel Support
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-blue-200 mb-10 max-w-2xl leading-relaxed">
             Supplying vital vessel accessories and marine equipment for operational requirements in Chattogram and beyond.
           </p>
           
@@ -36,7 +36,7 @@ export default function Hero() {
             </Link>
             <Link 
               href="/services" 
-              className="inline-flex items-center justify-center border border-gray-400 text-white px-8 py-4 font-medium hover:bg-white/10 transition-colors group text-center"
+              className="inline-flex items-center justify-center border border-slate-400 text-white px-8 py-4 font-medium hover:bg-white/10 transition-colors group text-center"
             >
               Explore Services 
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

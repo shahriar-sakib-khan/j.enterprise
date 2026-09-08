@@ -19,7 +19,7 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               About the Company
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-blue-200 leading-relaxed">
               Based in Chattogram, {siteConfig.businessName} provides vital vessel accessories and equipment to support marine operations.
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-20 md:py-32 bg-blue-50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
             <div className="lg:col-span-4">
@@ -37,26 +37,26 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Legal Name</h3>
-                    <p className="text-lg font-medium text-[#2A2A2A]">{siteConfig.businessName}</p>
+                    <h3 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-2">Legal Name</h3>
+                    <p className="text-lg font-medium text-blue-950">{siteConfig.businessName}</p>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Operating As</h3>
-                    <p className="text-lg font-medium text-[#2A2A2A]">{siteConfig.shortName}</p>
+                    <h3 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-2">Operating As</h3>
+                    <p className="text-lg font-medium text-blue-950">{siteConfig.shortName}</p>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Proprietor</h3>
-                    <p className="text-lg font-medium text-[#2A2A2A]">{siteConfig.proprietor}</p>
+                    <h3 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-2">Proprietor</h3>
+                    <p className="text-lg font-medium text-blue-950">{siteConfig.proprietor}</p>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Head Office</h3>
-                    <p className="text-lg font-medium text-[#2A2A2A]">Chattogram, Bangladesh</p>
+                    <h3 className="text-sm font-bold text-blue-300 uppercase tracking-wider mb-2">Head Office</h3>
+                    <p className="text-lg font-medium text-blue-950">Chattogram, Bangladesh</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            <div className="lg:col-span-8 prose prose-lg max-w-none text-gray-600">
+            <div className="lg:col-span-8 prose prose-lg max-w-none text-blue-700">
               <p className="text-xl text-[#0A192F] font-medium leading-relaxed mb-8">
                 {siteConfig.businessName} ({siteConfig.shortName}) focuses on the supply and sourcing of essential marine equipment for commercial vessels, maritime operations, and industrial applications.
               </p>
@@ -89,10 +89,10 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="py-16 bg-[#F8F9FA] border-y border-gray-200">
+      <section className="py-16 bg-blue-50 border-y border-blue-200">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
-            <div className="w-48 h-48 md:w-56 md:h-56 shrink-0 relative rounded-full overflow-hidden border-4 border-white shadow-xl bg-gray-200">
+            <div className="w-48 h-48 md:w-56 md:h-56 shrink-0 relative rounded-full overflow-hidden border-4 border-white shadow-xl bg-slate-200">
               <Image 
                 src="/team/proprietor.png" 
                 alt={siteConfig.proprietor} 
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 {siteConfig.proprietor}
               </h3>
               <p className="text-xl text-[#0A192F] font-medium mb-4">Proprietor, {siteConfig.businessName}</p>
-              <p className="text-gray-600 leading-relaxed max-w-2xl">
+              <p className="text-blue-700 leading-relaxed max-w-2xl">
                 With a deep commitment to the maritime industry, MD. Jana Alam leads {siteConfig.shortName} with a focus on operational excellence, reliable sourcing, and establishing enduring partnerships with vessel operators internationally.
               </p>
             </div>

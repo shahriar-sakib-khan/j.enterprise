@@ -16,7 +16,7 @@ export default function Locations() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {siteConfig.locations.map((location, index) => (
-            <div key={index} className="bg-[#112240] p-8 md:p-10 border border-gray-700/50 relative overflow-hidden">
+            <div key={index} className="bg-[#112240] p-8 md:p-10 border border-blue-800/50 relative overflow-hidden">
               <Building2 className="absolute -right-8 -bottom-8 w-48 h-48 text-white/5" />
               
               <div className="relative z-10">
@@ -25,7 +25,7 @@ export default function Locations() {
                   {location.type}
                 </h3>
                 
-                <address className="not-italic text-lg text-gray-300 leading-relaxed mb-8">
+                <address className="not-italic text-lg text-blue-200 leading-relaxed mb-8">
                   {location.address}<br />
                   {location.street}<br />
                   {location.city}<br />
@@ -33,13 +33,13 @@ export default function Locations() {
                 </address>
 
                 {/* Adding contact details directly in the location card for easier access */}
-                <div className="space-y-3 pt-6 border-t border-gray-700">
-                  <div className="flex items-center text-gray-300 hover:text-white transition-colors">
+                <div className="space-y-3 pt-6 border-t border-blue-800">
+                  <div className="flex items-center text-blue-200 hover:text-white transition-colors">
                     <Mail className="w-5 h-5 mr-4 text-[#00B4D8]" />
                     <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
                   </div>
                   {index === 0 && siteConfig.phone.map((phone, i) => (
-                    <div key={i} className="flex items-center text-gray-300 hover:text-white transition-colors">
+                    <div key={i} className="flex items-center text-blue-200 hover:text-white transition-colors">
                       <Phone className="w-5 h-5 mr-4 text-[#00B4D8]" />
                       <a href={`tel:${phone.replace(/[^0-9+]/g, '')}`}>{phone}</a>
                     </div>
