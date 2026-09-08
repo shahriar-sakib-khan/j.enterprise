@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
 import MarineVisual from "@/components/sections/MarineVisual";
 import Brands from "@/components/sections/Brands";
@@ -81,6 +82,34 @@ export default function AboutPage() {
 
               <p>
                 Our philosophy is straightforward: provide clear communication, reliable technical equipment, and practical sourcing support for the maritime industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="py-16 bg-[#F8F9FA] border-y border-gray-200">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            <div className="w-48 h-48 md:w-56 md:h-56 shrink-0 relative rounded-full overflow-hidden border-4 border-white shadow-xl bg-gray-200">
+              <Image 
+                src="/team/proprietor.png" 
+                alt={siteConfig.proprietor} 
+                fill 
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl font-bold text-[#00B4D8] uppercase tracking-widest mb-2 text-sm">
+                Leadership
+              </h2>
+              <h3 className="text-3xl md:text-4xl font-bold text-[#0A192F] mb-4">
+                {siteConfig.proprietor}
+              </h3>
+              <p className="text-xl text-[#0A192F] font-medium mb-4">Proprietor, {siteConfig.businessName}</p>
+              <p className="text-gray-600 leading-relaxed max-w-2xl">
+                With a deep commitment to the maritime industry, MD. Jana Alam leads {siteConfig.shortName} with a focus on operational excellence, reliable sourcing, and establishing enduring partnerships with vessel operators internationally.
               </p>
             </div>
           </div>
